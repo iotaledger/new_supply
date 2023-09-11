@@ -1,0 +1,302 @@
+{
+  "protocolParameters": {
+    "version": 2,
+    "networkName": "iota-mainnet",
+    "bech32Hrp": "iota",
+    "minPowScore": 1500,
+    "belowMaxDepth": 15,
+    "rentStructure": {
+      "vByteCost": 250,
+      "vBFactorData": 1,
+      "vBFactorKey": 10
+    },
+    "tokenSupply": "4600000000000000"
+  },
+  "validateSupply": true,
+  "treasuryTokens": "0",
+  "snapshot": {
+    "skipSnapshotGeneration": false,
+    "chrysalisSnapshotFile": "global_snapshot-7669900.bin",
+    "outputSnapshotFile": "the_merge_snapshot.bin",
+    "genesisMilestoneIndex": 7669900,
+    "ledgerMilestoneIndex": 7669900,
+    "targetMilestoneIndex": 7669900,
+    "targetMilestoneTimestamp": 1696399275
+  },
+  "export": {
+    "active": true,
+    "dir": "./exports",
+    "summaryFile": {
+      "csv": "summary_addresses_balances.csv",
+      "bin": "summary_addresses_balances.bin"
+    }
+  },
+  "import": {
+    "active": false,
+    "outputMarker": "testOutputs",
+    "ledgerFile": "./import.csv"
+  },
+  "vesting": {
+    "startDate": "2023-10-04T00:00:00+00:00",
+    "outputMarker": "themerge",
+    "allocations": [
+      {
+        "name": "Treasury_DAO",
+        "unlocks": {
+          "initialUnlock": 1
+        },
+        "addresses": [
+          {
+            "name": "Treasury_DAO",
+            "address": "iota1qz2njf2m4wyp6hxz9cs296yfnpdclegh7c6dqcrux5zcjg2cxwrvjlu5cyr",
+            "tokens": "62,560,976,001,028"
+          }
+        ]
+      },
+      {
+        "name": "Unmigrated_Legacy_Tokens",
+        "unlocks": {
+          "initialUnlock": 1
+        },
+        "addresses": [
+          {
+            "name": "Unmigrated_Legacy_Tokens",
+            "address": "iota1qzae4clf9lfsyrvvlemve92d5nda9vs088rswljtgyy5zr50zfs9wqlw0kr",
+            "tokens": "175,893,692,656,112"
+          }
+        ]
+      },
+      {
+        "name": "IOTA_Airdrop",
+        "unlocks": {
+          "frequency": "bi-weekly",
+          "initialUnlock": 0.10,
+          "vestingPeriodYears": 2
+        },
+        "rewards": {
+          "tokens": "161,000,000,000,000",
+          "dir": "./assembly_staking_rewards"
+        }
+      },
+      {
+        "name": "Assembly_IF_Members",
+        "unlocks": {
+          "frequency": "bi-weekly",
+          "initialUnlock": 0.10,
+          "vestingPeriodYears": 2
+        },
+        "distribution": {
+          "exclude": {
+            "111111111111111111111111111111111111111111111": 0,
+            "15DpUfbwyUp4niU5aHFLRMYpMk82H2nEnQaYDF3i4JqSE": 0,
+            "16JCcPVjZJBgsZVaXHhkeZYq2aTMSTp4ebsZ3r3cHHGjf": 0,
+            "1ADjVz6uzJVjcGmwDnBvqbtsvrLS6TBHX3W6eeXR3fpH3": 0,
+            "1FfnG7Yf4yUzrnLoNGaUnF6ZTR2br5C9CuEqQJFKgM96y": 0,
+            "1DStxnJAqErJM5Z9MTTvTXH4yDb2xu6r3QDJWdpWzcA52": 0,
+            "17NhqHggKcAtvfcAXudmrKYcXFuwpjK4n5c6JC6esxmR": 0,
+            "1H429rgKCzczRX69UtPzePUG29SuQgqGsv3b9J3bhPYrf": 0,
+            "1Hnz6sPSSPRagyBVJ4h98nJwSkVaZZWqsqGHe8983aVBj": 0,
+            "13jCg6KWQRJYRyCLJWvhRqE7ZBXu8n86gvWKidMcwc1fU": 0
+          },
+          "tokens": "14,872,396,957,019",
+          "file": "./assembly_distribution.json"
+        }
+      },
+      {
+        "name": "Assembly_Investors",
+        "unlocks": {
+          "frequency": "bi-weekly",
+          "initialUnlock": 0.10,
+          "vestingPeriodYears": 2
+        },
+        "addresses": [
+          {
+            "name": "Investor_1",
+            "address": "iota1qpfgd5jvf6lq3q2zsmcrapfj0cx37609xkxvw0sxvf53d228puf42cngmf6",
+            "tokens": "36,030,948,112,963"
+          },
+          {
+            "name": "Investor_2",
+            "address": "iota1qpfgd5jvf6lq3q2zsmcrapfj0cx37609xkxvw0sxvf53d228puf42cngmf6",
+            "tokens": "9,007,737,028,241"
+          },
+          {
+            "name": "Investor_3",
+            "address": "iota1qr9nv9l36636xvcpkvntvpm8uav5pe3wvgme55hyx92yn54qc5tsv9a9y45",
+            "tokens": "27,023,211,084,722"
+          },
+          {
+            "name": "Investor_4",
+            "address": "iota1qr9nv9l36636xvcpkvntvpm8uav5pe3wvgme55hyx92yn54qc5tsv9a9y45",
+            "tokens": "9,007,737,028,241"
+          },
+          {
+            "name": "Investor_5",
+            "address": "iota1qqyc822ngzsh9psd8cee3sagzac6w0dy5ulnpup4x0avvxnhkqm3gtm5m6w",
+            "tokens": "6,305,415,919,769"
+          },
+          {
+            "name": "Investor_6",
+            "address": "iota1qqyc822ngzsh9psd8cee3sagzac6w0dy5ulnpup4x0avvxnhkqm3gtm5m6w",
+            "tokens": "4,828,147,047,137"
+          },
+          {
+            "name": "Investor_7",
+            "address": "iota1qqyc822ngzsh9psd8cee3sagzac6w0dy5ulnpup4x0avvxnhkqm3gtm5m6w",
+            "tokens": "2,378,042,575,456"
+          },
+          {
+            "name": "Investor_8",
+            "address": "iota1qpdt55wn65hysu5w3jwn40tx9l84n7utd5zkj5dvuygn084m22j9jjjee50",
+            "tokens": "18,015,474,056,482"
+          },
+          {
+            "name": "Investor_9",
+            "address": "iota1qpnlf79fayfgmm208kuej5kp6n2u0dcfhha8vt7y2cxphg3wu33x6pfdurm",
+            "tokens": "2,702,321,108,472"
+          },
+          {
+            "name": "Investor_10",
+            "address": "iota1qpnlf79fayfgmm208kuej5kp6n2u0dcfhha8vt7y2cxphg3wu33x6pfdurm",
+            "tokens": "9,007,737,028,241"
+          },
+          {
+            "name": "Investor_11",
+            "address": "iota1qpnlf79fayfgmm208kuej5kp6n2u0dcfhha8vt7y2cxphg3wu33x6pfdurm",
+            "tokens": "4,503,868,514,120"
+          },
+          {
+            "name": "Investor_12",
+            "address": "iota1qpnlf79fayfgmm208kuej5kp6n2u0dcfhha8vt7y2cxphg3wu33x6pfdurm",
+            "tokens": "4,503,868,514,120"
+          },
+          {
+            "name": "Investor_13",
+            "address": "iota1qpnlf79fayfgmm208kuej5kp6n2u0dcfhha8vt7y2cxphg3wu33x6pfdurm",
+            "tokens": "4,503,868,514,120"
+          },
+          {
+            "name": "Investor_14",
+            "address": "iota1qpdt55wn65hysu5w3jwn40tx9l84n7utd5zkj5dvuygn084m22j9jjjee50",
+            "tokens": "2,251,934,257,060"
+          },
+          {
+            "name": "Investor_15",
+            "address": "iota1qpdt55wn65hysu5w3jwn40tx9l84n7utd5zkj5dvuygn084m22j9jjjee50",
+            "tokens": "2,702,321,108,472"
+          },
+          {
+            "name": "Investor_16",
+            "address": "iota1qpdt55wn65hysu5w3jwn40tx9l84n7utd5zkj5dvuygn084m22j9jjjee50",
+            "tokens": "1,801,547,405,648"
+          },
+          {
+            "name": "Investor_17",
+            "address": "iota1qzvul3clml0c7nqhuk30a6xpl36xuqgsv730ayjrd8sc99ks9lw3kxk2s88",
+            "tokens": "900,773,702,824"
+          },
+          {
+            "name": "Investor_18",
+            "address": "iota1qzvul3clml0c7nqhuk30a6xpl36xuqgsv730ayjrd8sc99ks9lw3kxk2s88",
+            "tokens": "900,773,702,824"
+          },
+          {
+            "name": "Investor_19",
+            "address": "iota1qzvul3clml0c7nqhuk30a6xpl36xuqgsv730ayjrd8sc99ks9lw3kxk2s88",
+            "tokens": "900,773,702,824"
+          },
+          {
+            "name": "Investor_20",
+            "address": "iota1qq6sgu7qm8ndgm4a08u8wv90jrlq5z9dn36z42z30vlvax9ss85nguunw5c",
+            "tokens": "1,621,392,665,083"
+          },
+          {
+            "name": "Investor_21",
+            "address": "iota1qq6sgu7qm8ndgm4a08u8wv90jrlq5z9dn36z42z30vlvax9ss85nguunw5c",
+            "tokens": "1,801,547,405,648"
+          },
+          {
+            "name": "Investor_22",
+            "address": "iota1qq6sgu7qm8ndgm4a08u8wv90jrlq5z9dn36z42z30vlvax9ss85nguunw5c",
+            "tokens": "2,251,934,257,060"
+          },
+          {
+            "name": "Investor_23",
+            "address": "iota1qq6sgu7qm8ndgm4a08u8wv90jrlq5z9dn36z42z30vlvax9ss85nguunw5c",
+            "tokens": "1,351,160,554,236"
+          },
+          {
+            "name": "Investor_24",
+            "address": "iota1qpvvwctwqqjks42qxd9ar39cnhe4xruu7t37mh8aec7ysqf8pe6rx5gd5am",
+            "tokens": "3,332,862,700,449"
+          },
+          {
+            "name": "Investor_25",
+            "address": "iota1qzvul3clml0c7nqhuk30a6xpl36xuqgsv730ayjrd8sc99ks9lw3kxk2s88",
+            "tokens": "4,503,868,514,120"
+          }
+        ]
+      },
+      {
+        "name": "New_Investors",
+        "unlocks": {
+          "frequency": "bi-weekly",
+          "initialUnlock": 0.10,
+          "vestingPeriodYears": 2
+        },
+        "addresses": [
+          {
+            "name": "New_Investors",
+            "address": "iota1qr5xg5hdatpmqusj6mtjm076g840kwr5v9004tvntufs74ekqcxmzyjnku4",
+            "tokens": "52,988,336,256,887"
+          }
+        ]
+      },
+      {
+        "name": "TEA",
+        "unlocks": {
+          "frequency": "bi-weekly",
+          "initialUnlock": 0.10,
+          "vestingPeriodYears": 4
+        },
+        "addresses": [
+          {
+            "name": "TEA",
+            "address": "iota1qrkwdhv2juxue3ju8ug9wfyw2q68qh495cjsn87svyfjytka7y3c6nf3lrk",
+            "tokens": "552,000,000,000,000"
+          }
+        ]
+      },
+      {
+        "name": "UAE",
+        "unlocks": {
+          "frequency": "bi-weekly",
+          "initialUnlock": 0.10,
+          "vestingPeriodYears": 4
+        },
+        "addresses": [
+          {
+            "name": "UAE",
+            "address": "iota1qrukjnd6jhgwc0ls6dgt574sxuulcsmq5lnzhtv4jmlwkydhe2zvy69t7jj",
+            "tokens": "552,000,000,000,000"
+          }
+        ]
+      },
+      {
+        "name": "IOTA_Foundation",
+        "unlocks": {
+          "frequency": "bi-weekly",
+          "initialUnlock": 0.10,
+          "vestingPeriodYears": 4
+        },
+        "addresses": [
+          {
+            "name": "IOTA_Foundation",
+            "address": "iota1qp8h9augeh6tk3uvlxqfapuwv93atv63eqkpru029p6sgvr49eufyz7katr",
+            "tokens": "325,469,717,000,000"
+          }
+        ]
+      }
+    ]
+  }
+}
